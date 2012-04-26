@@ -1,0 +1,5 @@
+<%- model_class = @proposta.class -%>
+<h1><%=t '.title', :default => t('helpers.titles.new', :model => model_class.model_name.human,
+                               :default => "Inscreva sua #{model_class.model_name.human}") %></h1>
+<br />
+<%= render :partial => 'form' %>

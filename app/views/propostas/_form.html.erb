@@ -1,0 +1,44 @@
+<%= form_for @proposta, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :desenvolvedores, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :desenvolvedores, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :titulo, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :titulo, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :objetivo, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :objetivo, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :descricao, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :descricao, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :plataforma, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :plataforma, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                propostas_path, :class => 'btn' %>
+  </div>
+<% end %>
