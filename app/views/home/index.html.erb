@@ -1,2 +1,56 @@
-<h1>Concurso VSPA</h1>
-<p>Inscreva sua proposta e participe</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1º Concurso VPSA - littleBIGjob</title>
+<link HREF="favicon.ico" mce_HREF="favicon.ico" REL="icon">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div id="page-container">
+  <div id="menuSuperior">
+    <!-- CONTEÚDO DO MENU -->
+    <img src="1concurso.png" width="130" height="28" alt="1º Concurso" />
+    <ul>
+			<li><%= link_to "Inscreva-se Já", new_proposta_path %></li>
+      <li><%= link_to "Informações", informacoes_path %></li>
+      <li><%= link_to "Regras", regras_path %></li>
+      <li><%= link_to "Contato", contato_path %></li>
+    </ul>
+  </div>
+  <div id="lateral">
+    <div class="respiro">
+      <!-- CONTEÚDO DA LATERAL -->
+      <img src="logo.png" width="188" height="133" id="logo" />
+      <img src="propostas.png" width="276" height="260" id="participe" />
+      <img src="vpsa_logo.png" id="vpsa_logo"/>
+      
+
+    </div>
+  </div>
+  <!-- CONTEÚDO DA PÁGINA -->
+  <div id="conteudo">
+    <div class="textos">
+      <h1>O que é?</h1>
+      <p>“little BIG job” é um concurso que visa premiar boas ideias que colaboradores tenham e além disso, oferecer a oportunidade de publicá-las usando os recursos de nossa empresa.</p>
+      <h1>Objetivo do Concurso</h1>
+      <p>
+      <ul>
+        <li>Oferecer a oportunidade de conhecer novas tecnologias por meio de atividades úteis e premiadas;</li>
+        <li>Agregar experiência a carreira profissional;</li>
+        <li>Permitir uma participação ainda mais direta do departamento de desenvolvimento no crescimento da empresa e do produto;</li>
+        <li>Aumentar a aderência do nosso produto ao mercado;</li>
+        <li>Ser beta no modelo de negócio VPSA Store.</li>
+      </ul>
+      </p>
+      <h1>Premiação</h1>
+    </div>
+    <div id="premiacao">
+      <div class="base primeiro"> </div>
+      <div class="base segundo"> </div>
+      <div class="base terceiro"> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

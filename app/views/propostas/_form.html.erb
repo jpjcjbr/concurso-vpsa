@@ -2,43 +2,43 @@
   <div class="control-group">
     <%= f.label :desenvolvedores, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :desenvolvedores, :class => 'text_field' %>
+      <%= f.text_field :desenvolvedores, :class => 'text_field input_grande', :placeholder => 'Nome dos desenvolvedores' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :email, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :email, :class => 'text_field' %>
+      <%= f.text_field :email, :class => 'text_field input_grande', :placeholder => 'Email para contato' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :titulo, :class => 'control-label' %>
+    <%= f.label :titulo, 'Título', :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :titulo, :class => 'text_field' %>
+      <%= f.text_field :titulo, :class => 'text_field input_grande', :placeholder => 'Título do projeto' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :objetivo, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :objetivo, :class => 'text_field' %>
+      <%= f.text_area :objetivo, :class => 'input_grande text_area_grande', :placeholder => 'Objetivo do projeto'%>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :descricao, :class => 'control-label' %>
+    <%= f.label :descricao, 'Descrição', :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :descricao, :class => 'text_field' %>
+      <%= f.text_area :descricao, :class => 'input_grande text_area_grande', :placeholder => 'Descrição do projeto'%>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :plataforma, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :plataforma, :class => 'text_field' %>
+      <%= f.text_field :plataforma, :class => 'text_field', :placeholder => 'Web, Mobile, Desktop' %>
     </div>
   </div>
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+    <%= f.submit 'Enviar Proposta', :class => 'btn btn-primary' %>
+    <%= link_to 'Descartar',
                 propostas_path, :class => 'btn' %>
   </div>
 <% end %>

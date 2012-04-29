@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
 */
+
+.input_grande {
+	width: 650px;
+}
+
+.text_area_grande {
+	height: 100px;
+}
