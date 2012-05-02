@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    render :layout => 'pagina_inicial'
   end
   
   def info

@@ -11,32 +11,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="/">1º Concurso VPSA</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-						<li><%= link_to "Inscreva-se Já", new_proposta_path %></li>
-            <li><%= link_to "Informações", informacoes_path %></li>
-            <li><%= link_to "Regras", regras_path %></li>
-            <li><%= link_to "Contato", contato_path %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="span9"><%= yield %></div>
-    </div>
-  </div>
+  <div id="page-container">
+	  <div id="menuSuperior">
+	    <!-- CONTEÚDO DO MENU -->
+			<%= link_to image_tag('1concurso.png', :border => 0, :width => 130, :height => 28, :alt => '1º Concurso'), root_path %>
+	    <ul>
+				<li><%= link_to "Inscreva-se Já", new_proposta_path %></li>
+	      <li><%= link_to "Informações", informacoes_path %></li>
+	      <li><%= link_to "Regras", regras_path %></li>
+	      <li><%= link_to "Contato", contato_path %></li>
+	    </ul>
+	  </div>
+	  <div id="lateral">
+	    <div class="respiro">
+	      <!-- CONTEÚDO DA LATERAL -->
+				<%= image_tag 'logo.png', :width => 188, :height => 133, :id => 'logo' %>
+				<%= image_tag 'propostas.png', :width => 276, :height => 260, :id => 'participe' %>
+				<%= image_tag 'vpsa_logo.png', :id => 'vpsa_logo' %>
+	    </div>
+	  </div>
+	  <!-- CONTEÚDO DA PÁGINA -->
+	  <div id="conteudo">
+	    <%= yield %>
+	  </div>
+	</div>
 </body>
 </html>
 

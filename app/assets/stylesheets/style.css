@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body, form {
+	margin: 0;
+	padding: 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#page-container {
+	min-width: 920px;
+	height:100%;
+}
+/* CABECALHO */
+#menuSuperior {
+	height:45px;
+	background-color:#000;
+}
+#menuSuperior ul {
+	color:#E8E8E8;
+	list-style:none;
+	height:42px;
+	margin-left:230px;
+	width:500px;
+}
+#menuSuperior li {
+	font-size:16px;
+	padding:10px;
+	float:left;
+}
+#menuSuperior ul li {
+	background-color:#000;
+}
+
+#menuSuperior ul li a{
+	text-decoration: none;
+	color: #E8E8E8;
+}
+#menuSuperior ul li:hover {
+	background-color:#333;
+	cursor:pointer;
+}
+#menuSuperior img {
+	margin-top:7px;
+	margin-left:10px;
+	float:left;
+}
+/* CONTEUDO */
+
+#lateral {
+	width:235px;
+	height:600px;
+	background:#FFFF;
+	float:left;
+}
+#lateral .respiro {
+	padding:10px;
+	text-align:center;
+}
+#lateral #participe {
+	position:absolute;
+	top:200px;
+	left:0px;
+}
+#lateral #vpsa_logo{
+	margin-top:460px;
+}
+#conteudo {
+	margin-left:235px;
+	min-height:600px;
+	background-color:#E5E5E5;
+}
+#conteudo .textos {
+	padding:10px;
+	padding-left:60px;
+}
+#conteudo .textos ul li {
+	list-style-image:url(check.png);
+	padding-top:5px;
+}
+#conteudo .textos ul {
+	padding-left:30px;
+}
+#premiacao {
+	height:199px;
+	border-top:10px #999 solid;
+}
+#premiacao .base {
+	float:left;
+	width:33.333%;
+	height:199px;
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+#premiacao .primeiro {
+	background-image:url(1_lugar_premio.png);
+}
+#premiacao .segundo {
+	background-image:url(2_lugar_premio.png);
+}
+#premiacao .terceiro {
+	background-image:url(3_lugar_premio.png);
+}
+h1 {
+	padding:10px;
+}
+p {
+	padding:10px;
+}
+
+.form-horizontal .control-group:after{
+	clear: none;
+}
