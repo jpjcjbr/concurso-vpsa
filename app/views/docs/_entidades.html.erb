@@ -1,0 +1,57 @@
+<h2 class="titulo_item_doc">
+	<a name="Entidades"></a>
+	API de Entidades
+</h2>
+
+<h3>
+	Endereços
+</h3>
+
+<p>https://www.vpsa.com.br/vpsa/rest/externo/<strong>{base}</strong>/entidades<br />
+	https://www.vpsa.com.br/vpsa/rest/externo/<strong>{base}</strong>/entidades/<strong>{idEntidade}</strong></p>
+
+<h3>
+	Parametros
+</h3>
+
+<p><strong>base</strong>: representa a base do usuário. Ex.: showroom<br />
+	<strong>idEntidade</strong>: id da entidade.</p>
+
+<h3>
+	Retorno
+</h3>
+
+<pre class="prettyprint codigo">
+[
+  {
+      "id": 6,
+      "nome": "ENTIDADE TESTE DO DR. VITOR ( SIMPLES NACIONAL )"
+  },
+  {
+      "id": 12,
+      "nome": "ENTIDADE TESTES DO FABIO (LUCRO ARBITRADO)"
+  },
+  {
+      "id": 10,
+      "nome": "ENTIDADE TESTES DO FABIO (LUCRO PRESUMIDO)"
+  },
+  {
+      "id": 11,
+      "nome": "ENTIDADE TESTES DO FABIO (LUCRO REAL)"
+  },
+  {
+      "id": 4,
+      "nome": "ENTIDADE TESTES DO FABIO (SIMPLES NACIONAL)"
+  }
+]</pre>
+
+<ul>
+	<li>id: id da entidade(long)</li>
+	<li>nome: nome da entidade(string)</li>
+</ul>
+
+<h3>
+	Exemplo de uso
+</h3>
+<p>https://www.vpsa.com.br/vpsa/rest/externo/<strong>showroom</strong>/entidades<br />
+	https://www.vpsa.com.br/vpsa/rest/externo/<strong>showroom</strong>/entidades/<strong>1</strong></p>

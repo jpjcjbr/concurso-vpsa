@@ -7,6 +7,8 @@ ConcursoVpsa::Application.routes.draw do
   
   match 'contato' => 'home#contato'
   
+  match 'documentacao' => 'docs#index'
+  
   resources :propostas
 
   # The priority is based upon order of creation:

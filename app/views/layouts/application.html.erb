@@ -10,7 +10,7 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="prettyPrint()">
   <div id="page-container">
 	  <div id="menuSuperior">
 	    <!-- CONTEÚDO DO MENU -->
@@ -19,6 +19,7 @@
 				<li><%= link_to "Inscreva-se Já", new_proposta_path %></li>
 	      <li><%= link_to "Informações", informacoes_path %></li>
 	      <li><%= link_to "Regras", regras_path %></li>
+				<li><%= link_to "API", documentacao_path %></li>
 	      <li><%= link_to "Contato", contato_path %></li>
 	    </ul>
 	  </div>

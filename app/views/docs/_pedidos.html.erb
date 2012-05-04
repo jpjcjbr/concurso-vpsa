@@ -1,0 +1,70 @@
+<h2 class="titulo_item_doc">
+	<a name="Pedidos"></a>
+	API de Pedidos
+</h2>
+
+<h3>
+	Endereços
+</h3>
+
+<p>https://www.vpsa.com.br/estoque/rest/externo/<strong>{base}</strong>/<strong>{idEntidade}</strong>/pedidos<br />
+	https://www.vpsa.com.br/estoque/rest/externo/<strong>{base}</strong>/<strong>{idEntidade}</strong>/pedidos/<strong>{idPedido}</strong></p>
+
+<h3>
+	Parametros
+</h3>
+
+<p><strong>base</strong>: representa a base do usuário. Ex.: showroom<br />
+	<strong>idEntidade</strong>: id da entidade<br />
+	<strong>idPedido</strong>: id do pedido</p>
+
+<h3>
+	Retorno
+</h3>
+
+<pre class="prettyprint codigo">
+[
+    {
+        "id": 8,
+        "data": "13/04/2012",
+        "numero": "0001-0000009",
+        "valorTotal": 4100,
+        "planoPagamento": "A VISTA",
+        "representante": "JOSÉ",
+        "idTerceiroCliente": 4
+    },
+    {
+        "id": 3,
+        "data": "13/04/2012",
+        "numero": "0001-0000004",
+        "valorTotal": 2500,
+        "planoPagamento": "A VISTA",
+        "representante": "MARIA",
+        "idTerceiroCliente": 4
+    },
+    {
+        "id": 2,
+        "data": "13/04/2012",
+        "numero": "0001-0000003",
+        "valorTotal": 5000,
+        "planoPagamento": "A VISTA",
+        "representante": "ADERBAL",
+        "idTerceiroCliente": 4
+    }
+]</pre>
+
+<ul>
+	<li>id: id do pedido(long)</li>
+	<li>data: data do pedido(string)</li>
+	<li>numero:número do pedido formatado(string)</li>
+	<li>valorTotal: valor total do pedido(decimal)</li>
+	<li>planoPagamento: plano de pagamento utilizado no pedido(string)</li>
+	<li>representante: representante responsável pelo pedido(string)</li>
+	<li>idTerceiroCliente: id do terceiro cliente(long)</li>
+</ul>
+
+<h3>
+	Exemplo de uso
+</h3>
+<p>https://www.vpsa.com.br/estoque/rest/externo/<strong>showroom</strong>/<strong>1</strong>/pedidos<br />
+	https://www.vpsa.com.br/estoque/rest/externo/<strong>showroom</strong>/<strong>1</strong>/pedidos/<strong>1</strong></p>

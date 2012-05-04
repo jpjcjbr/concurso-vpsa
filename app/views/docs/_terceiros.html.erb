@@ -1,0 +1,74 @@
+<h2 class="titulo_item_doc">
+	<a name="Terceiros"></a>
+	API de Terceiros
+</h2>
+
+<h3>
+	Endereços
+</h3>
+
+<p>https://www.vpsa.com.br/vpsa/rest/externo/<strong>{base}</strong>/terceiros<br />
+	https://www.vpsa.com.br/vpsa/rest/externo/<strong>{base}</strong>/terceiros/<strong>{idTerceiro}</strong></p>
+
+<h3>
+	Parametros
+</h3>
+
+<p><strong>base</strong>: representa a base do usuário. Ex.: showroom<br />
+	<strong>idTerceiro</strong>: id do terceiro.</p>
+
+<h3>
+	Retorno
+</h3>
+
+<pre class="prettyprint codigo">
+[
+    {
+        "id": 3,
+        "identificacao": "10.219.281/0001-21",
+        "endereco": {
+            "cidade": "São José dos Campos",
+            "logradouro": "RUA DOS IMIGRANTRES",
+            "bairro": "BAIRRO",
+            "pais": "BRASIL",
+            "siglaEstado": "SP"
+        },
+        "nome": "EMPRESA TESTE",
+        "email": "empresateste@empresateste.com.br"
+    },
+    {
+        "id": 1,
+        "identificacao": "123.456.789-00",
+        "endereco": {
+            "cidade": "São José dos Campos",
+            "logradouro": "RUA RUA RUA",
+            "bairro": "BAIRRO",
+            "pais": "BRASIL",
+            "siglaEstado": "SP"
+        },
+        "nome": "Eu mesmo",
+        "email": "eumesmo@vpsa.com.br"
+    }
+]</pre>
+
+<ul>
+	<li>id: id do terceiro(long)</li>
+	<li>identificacao: cpf ou cnpj do terceiro formatado(string)</li>
+	<li>endereco: endereco do terceiro(endereco)
+		<ul>
+			<li>cidade: cidade do endereco(string)</li>
+			<li>logradouro: logradouro do endereco(string)</li>
+			<li>bairro: bairro do endereco(string)</li>
+			<li>pais: pais do endereco(string)</li>
+			<li>siglaEstado: uf do endereco(string)</li>
+		</ul>
+	</li>
+	<li>nome: nome do terceiro(string)</li>
+	<li>email: email do terceiro(string)</li>
+</ul>
+
+<h3>
+	Exemplo de uso
+</h3>
+<p>https://www.vpsa.com.br/vpsa/rest/externo/<strong>showroom</strong>/terceiros<br />
+	https://www.vpsa.com.br/vpsa/rest/externo/<strong>showroom</strong>/terceiros/<strong>1</strong></p>

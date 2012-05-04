@@ -117,3 +117,15 @@ p {
 .form-horizontal .control-group:after{
 	clear: none;
 }
+
+.documentacao_api{
+	margin-left: 50px;
+}
+
+pre.codigo{
+	width: 80%;
+}
+
+h2.titulo_item_doc {
+	border-bottom: 1px solid #CCCCCC;
+}

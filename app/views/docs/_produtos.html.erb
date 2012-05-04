@@ -1,0 +1,70 @@
+<h2 class="titulo_item_doc">
+	<a name="Produtos"></a>
+	API de Produtos
+</h2>
+
+<h3>
+	Endereços
+</h3>
+
+<p>https://www.vpsa.com.br/estoque/rest/externo/<strong>{base}</strong>/<strong>{idEntidade}</strong>/produtos<br />
+	https://www.vpsa.com.br/estoque/rest/externo/<strong>{base}</strong>/<strong>{idEntidade}</strong>/produtos/<strong>{idProduto}</strong></p>
+
+<h3>
+	Parametros
+</h3>
+
+<p><strong>base</strong>: representa a base do usuário. Ex.: showroom<br />
+	<strong>idEntidade</strong>: id da entidade<br />
+	<strong>idProduto</strong>: id do produto</p>
+
+<h3>
+	Retorno
+</h3>
+
+<pre class="prettyprint codigo">
+[
+    {
+        "id": 16,
+        "descricao": "PRODUTO 10 - UN",
+        "preco": 19,
+        "estoqueMaximo": 100009,
+        "estoqueMinimo": 19,
+        "quantidadeEmEstoque": 0,
+        "valorTotalEmEstoque": 0
+    },
+    {
+        "id": 17,
+        "descricao": "PRODUTO 11 - UN",
+        "preco": 20,
+        "estoqueMaximo": 100010,
+        "estoqueMinimo": 20,
+        "quantidadeEmEstoque": 0,
+        "valorTotalEmEstoque": 0
+    },
+    {
+        "id": 18,
+        "descricao": "PRODUTO 12 - UN",
+        "preco": 21,
+        "estoqueMaximo": 100011,
+        "estoqueMinimo": 21,
+        "quantidadeEmEstoque": 0,
+        "valorTotalEmEstoque": 0
+    }
+]</pre>
+
+<ul>
+	<li>id: id do produto(long)</li>
+	<li>descricao: descricao do produto(string)</li>
+	<li>preco: preço do produto(decimal)</li>
+	<li>estoqueMaximo: quantidade máxima de estoque produto(decimal)</li>
+	<li>estoqueMinimo: quantidade mínima de estoque do produto(decimal)</li>
+	<li>quantidadeEmEstoque: quantidade de produtos existentes em estoque do produto(decimal)</li>
+	<li>valorTotalEmEstoque: valor de estoque do produto(decimal)</li>
+</ul>
+
+<h3>
+	Exemplo de uso
+</h3>
+<p>https://www.vpsa.com.br/estoque/rest/externo/<strong>showroom</strong>/<strong>1</strong>/produtos<br />
+	https://www.vpsa.com.br/estoque/rest/externo/<strong>showroom</strong>/<strong>1</strong>/produtos/<strong>1</strong></p>
