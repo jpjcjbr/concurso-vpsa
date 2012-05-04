@@ -98,15 +98,7 @@ body, form {
 	background-repeat:no-repeat;
 	background-position:top center;
 }
-#premiacao .primeiro {
-	background-image:url(1_lugar_premio.png);
-}
-#premiacao .segundo {
-	background-image:url(2_lugar_premio.png);
-}
-#premiacao .terceiro {
-	background-image:url(3_lugar_premio.png);
-}
+
 h1 {
 	padding:10px;
 }
@@ -118,14 +110,14 @@ p {
 	clear: none;
 }
 
-.documentacao_api{
-	margin-left: 50px;
-}
-
 pre.codigo{
 	width: 80%;
 }
 
 h2.titulo_item_doc {
 	border-bottom: 1px solid #CCCCCC;
+}
+
+div.ajuste_conteudo {
+	margin-left: 50px;
 }

@@ -6,7 +6,6 @@ class PropostasController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @propostas }
     end
   end
 
@@ -17,7 +16,6 @@ class PropostasController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @proposta }
     end
   end
 
@@ -28,13 +26,7 @@ class PropostasController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @proposta }
     end
-  end
-
-  # GET /propostas/1/edit
-  def edit
-    @proposta = Proposta.find(params[:id])
   end
 
   # POST /propostas
@@ -44,27 +36,9 @@ class PropostasController < ApplicationController
 
     respond_to do |format|
       if @proposta.save
-        format.html { redirect_to @proposta, notice: 'Proposta was successfully created.' }
-        format.json { render json: @proposta, status: :created, location: @proposta }
+        format.html { redirect_to propostas_path, notice: 'Proposta was successfully created.' }
       else
         format.html { render action: "new" }
-        format.json { render json: @proposta.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /propostas/1
-  # PUT /propostas/1.json
-  def update
-    @proposta = Proposta.find(params[:id])
-
-    respond_to do |format|
-      if @proposta.update_attributes(params[:proposta])
-        format.html { redirect_to @proposta, notice: 'Proposta was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @proposta.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -77,7 +51,6 @@ class PropostasController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to propostas_url }
-      format.json { head :no_content }
     end
   end
 end
