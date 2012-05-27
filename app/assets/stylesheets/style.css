@@ -121,3 +121,7 @@ h2.titulo_item_doc {
 div.ajuste_conteudo {
 	margin-left: 50px;
 }
+
+#error_explanation {
+	margin-left: 50px;
+}
