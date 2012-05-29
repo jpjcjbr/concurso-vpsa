@@ -15,7 +15,11 @@
 	  <tbody>
 	    <% @propostas.each do |proposta| %>
 	      <tr>
-	        <td><%= proposta.id %></td>
+					<% if user_signed_in? %>
+		        <td><%= link_to proposta.id, proposta %></td>
+					<% else %>
+		        <td><%= proposta.id %></td>
+					<% end %>
 	        <td><%= proposta.desenvolvedores %></td>
 	        <td><%= proposta.titulo %></td>
 	        <td><%= proposta.plataforma %></td>
