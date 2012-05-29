@@ -6,10 +6,10 @@
 	    <tr>
 	      <th><%= model_class.human_attribute_name(:id) %></th>
 	      <th><%= model_class.human_attribute_name(:desenvolvedores) %></th>
-	      <th><%= model_class.human_attribute_name(:email) %></th>
 	      <th><%= model_class.human_attribute_name(:titulo) %></th>
 	      <th><%= model_class.human_attribute_name(:plataforma) %></th>
 				<th><%= model_class.human_attribute_name(:status) %></th>
+				<th>Data</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -17,10 +17,10 @@
 	      <tr>
 	        <td><%= proposta.id %></td>
 	        <td><%= proposta.desenvolvedores %></td>
-	        <td><%= proposta.email %></td>
 	        <td><%= proposta.titulo %></td>
 	        <td><%= proposta.plataforma %></td>
 				  <td><%= proposta.status %></td>
+				  <td><%= proposta.created_at.strftime("%d/%m/%Y %H:%M:%S") %></td>
 	      </tr>
 	    <% end %>
 	  </tbody>
