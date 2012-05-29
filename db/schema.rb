@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120426231010) do
+ActiveRecord::Schema.define(:version => 20120529120547) do
 
   create_table "propostas", :force => true do |t|
     t.string   "desenvolvedores"
@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(:version => 20120426231010) do
     t.string   "objetivo"
     t.string   "descricao"
     t.string   "plataforma"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+    t.string   "status",          :default => "Aguardando Aprovação"
   end
 
 end
