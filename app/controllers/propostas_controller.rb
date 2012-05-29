@@ -42,15 +42,4 @@ class PropostasController < ApplicationController
       end
     end
   end
-
-  # DELETE /propostas/1
-  # DELETE /propostas/1.json
-  def destroy
-    @proposta = Proposta.find(params[:id])
-    @proposta.destroy
-
-    respond_to do |format|
-      format.html { redirect_to propostas_url }
-    end
-  end
 end
