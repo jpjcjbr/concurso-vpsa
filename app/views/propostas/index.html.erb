@@ -15,7 +15,7 @@
 	  <tbody>
 	    <% @propostas.each do |proposta| %>
 	      <tr>
-	        <td><%= link_to proposta.id, proposta_path(proposta) %></td>
+	        <td><%= proposta.id %></td>
 	        <td><%= proposta.desenvolvedores %></td>
 	        <td><%= proposta.email %></td>
 	        <td><%= proposta.titulo %></td>
