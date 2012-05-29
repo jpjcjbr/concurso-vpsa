@@ -30,6 +30,18 @@ class PropostasController < ApplicationController
       format.html # new.html.erb
     end
   end
+  
+  def update
+     @proposta = Proposta.find(params[:id])
+
+     respond_to do |format|
+       if @proposta.update_attributes(params[:proposta])
+         format.html { redirect_to propostas_path, notice: 'Proposta modificada com sucesso.' }
+       else
+         format.html { redirect_to propostas_path, notice: 'Erro ao alterar proposta.' }
+       end
+     end
+   end
 
   # POST /propostas
   # POST /propostas.json

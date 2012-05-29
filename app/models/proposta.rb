@@ -1,5 +1,5 @@
 class Proposta < ActiveRecord::Base
-  attr_accessible :descricao, :desenvolvedores, :email, :titulo, :objetivo, :plataforma
+  attr_accessible :descricao, :desenvolvedores, :email, :titulo, :objetivo, :plataforma, :status
   
   validates_presence_of :descricao
   validates_presence_of :desenvolvedores
