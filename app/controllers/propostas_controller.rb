@@ -1,4 +1,6 @@
 class PropostasController < ApplicationController
+  before_filter :authenticate_user!, :only => [:show]
+  
   # GET /propostas
   # GET /propostas.json
   def index
