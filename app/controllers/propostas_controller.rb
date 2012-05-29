@@ -1,5 +1,5 @@
 class PropostasController < ApplicationController
-  before_filter :authenticate_user!, :only => [:show]
+  before_filter :authenticate_user!, :only => [:show, :destroy, :update]
   
   # GET /propostas
   # GET /propostas.json
@@ -54,6 +54,15 @@ class PropostasController < ApplicationController
       else
         format.html { render action: "new" }
       end
+    end
+  end
+  
+  def destroy
+    @proposta = Proposta.find(params[:id])
+    @proposta.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(propostas_path) }
     end
   end
 end

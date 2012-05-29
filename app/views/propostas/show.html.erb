@@ -35,5 +35,6 @@
 		    <%= f.submit 'Alterar Status' %>
 		  </div>
 		<% end %>
+		<%= link_to 'Excluir Proposta', @proposta, :confirm => 'Deseja confirmar a exclusão?', :method => :delete %>
 	<% end %>
 </div>
