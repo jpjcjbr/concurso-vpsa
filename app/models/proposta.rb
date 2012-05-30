@@ -7,4 +7,7 @@ class Proposta < ActiveRecord::Base
   validates_presence_of :titulo
   validates_presence_of :objetivo
   validates_presence_of :plataforma
+  
+  validates_length_of :descricao, :maximum => 255
+  validates_length_of :objetivo, :maximum => 255
 end
