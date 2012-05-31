@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120529130706) do
+ActiveRecord::Schema.define(:version => 20120531140629) do
 
   create_table "propostas", :force => true do |t|
     t.string   "desenvolvedores"
     t.string   "email"
     t.string   "titulo"
-    t.string   "objetivo"
-    t.string   "descricao"
+    t.text     "objetivo",        :limit => 255
+    t.text     "descricao",       :limit => 255
     t.string   "plataforma"
-    t.datetime "created_at",                                          :null => false
-    t.datetime "updated_at",                                          :null => false
-    t.string   "status",          :default => "Aguardando Aprovação"
+    t.datetime "created_at",                                                         :null => false
+    t.datetime "updated_at",                                                         :null => false
+    t.string   "status",                         :default => "Aguardando Aprovação"
   end
 
   create_table "users", :force => true do |t|
