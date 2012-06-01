@@ -4,7 +4,7 @@ class PropostasController < ApplicationController
   # GET /propostas
   # GET /propostas.json
   def index
-    @propostas = Proposta.all
+    @propostas = Proposta.all.order("id")
 
     respond_to do |format|
       format.html # index.html.erb
