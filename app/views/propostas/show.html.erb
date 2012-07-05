@@ -30,7 +30,7 @@
 	<% if user_signed_in? %>
 		<%= form_for(@proposta) do |f| %>
 			<strong><%= model_class.human_attribute_name(:status) %>:</strong><br>
-			<%= f.select :status, options_for_select(["Aguardando Aprovação", "Aprovada", "Rejeitada"]) %>
+			<%= f.select :status, options_for_select(["Aguardando Aprovação", "Aprovada", "Rejeitada", "Cancelada"]) %>
 		  <div class="actions">
 		    <%= f.submit 'Alterar Status' %>
 		  </div>
